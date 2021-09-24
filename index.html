@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" href="img/Neginicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"type='text/css'>
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="music-container">
+        <div class="music-content">
+            <div id="big-image">
+                <div id=blackLayer></div>
+                <img src="img/Zight.png" alt="" id="bigImage">
+            </div>
+            <div id="menue">
+                <select id="select"class="form-select" aria-label="Default select example">
+                    <option selected value="0">Zight-Summer(Piano)</option>
+                    <option value="1"> Northwestern-Hometown</option>
+                    <option value="2">Arend-Tides"</option>
+                    <option value="3">Simon Folwar-Happy Days</option>
+                    <option value="4">Danijel Zambo-Silhouette</option>
+                  </select>
+            </div>
+            <div id="volume-container">
+                <img src="img/volume-low.png" alt="" id="volume-down">
+                <input type="range"class="slider" id="volumeslider" min="0" max="100" value="100" step="1">
+                <img src="img/volumn-high.png" alt="" id="volume-up">
+            </div>
+            <div id="music-image">
+                <div id="circle-image">
+                    <img src="img/Zight.png" alt="" id="cImage">
+                </div>
+                <div id="music-title">
+                    <h5 id="playlist_status"></h5>
+                    <h6 id="playlist_artist"></h6>
+                </div>
+            </div>
+            <div id="music-menue">
+                <button id="random"><img src="img/random.png" alt="" srcset=""></button>
+                <button id="mutebtn"><img src="img/speaker.png" alt=""></button>
+            </div>
+            <div id="currentTime">
+                <span id="curtimetext">00:00</span>
+                <span id="durtimetext">00:00</span>
+            </div>
+            <input type="range" class="seekslider" id="seekslider" min="0" max="100" value="0"step="1">
+            <div id="buttons">
+                <button class="repeat"id="repeat"><img src="img/rep.png" alt=""></button>
+                <div>
+                    <button class="pre" id="prevbtn"><img src="img/backward.png" alt=""></button>
+                    <button class="play"id="playpausebtn"><img src="img/play-red.png" alt=""></button>
+                    <button class="next" id="nextbtn"><img src="img/forward.png" alt=""></button>
+                </div>
+                <span class="like">
+                    <i class="far fa-heart" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+
+  
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="js/main.js"charset="utf-8"></script>
+</body>
+</html>
